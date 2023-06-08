@@ -1,0 +1,24 @@
+ALGORITHM vowel_count
+VAR
+    ch: CHAR;
+    vowel: CHAR;
+    text: STRING := "" ;
+    word_count, char_length, vowel_count: INTEGER := 0;
+BEGIN
+    REPEAT
+        Read(ch);//Read char
+        Read(vowel);//Read vowel
+        text = text + ch; //Concatenate into text 
+        if(ch == " " OR ch == "."){
+        word_count = word_count + 1; // increase word count after space or .
+        }
+        if(vowel == "a" || vowel == "e" || vowel == "i" || vowel == "o" || vowel == "u"){
+        vowel_count = vowel_count + 1; //increase vowel count after a,e,i,o,u
+        }
+    UNTIL (char == ".")//Stop when user enters .
+
+    char_length = text.length
+    Write(char_length)
+    Write(word_count)
+    Write(vowel_count)
+END
