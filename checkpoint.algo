@@ -3,7 +3,7 @@ VAR
     ch: CHAR;
     vowel: CHAR;
     text: STRING := "" ;
-    word_count, char_length, vowel_count: INTEGER := 0;
+    word_count, char_length, vowel_count: INTEGER;
 BEGIN
     REPEAT
         Read(ch);//Read char
@@ -12,7 +12,7 @@ BEGIN
         if(ch == " " OR ch == "."){
         word_count = word_count + 1; // increase word count after space or .
         }
-        if(vowel == "a" || vowel == "e" || vowel == "i" || vowel == "o" || vowel == "u"){
+        if(vowel == "e" || vowel == "a" || vowel == "u" || vowel == "o" || vowel == "i"){
         vowel_count = vowel_count + 1; //increase vowel count after a,e,i,o,u
         }
     UNTIL (char == ".")//Stop when user enters .

@@ -1,0 +1,46 @@
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #878388;
+}
+#cart h2{
+    font-size: 55px;
+    font-weight: 600;
+    color: rgb(8, 134, 237);
+}
+
+.cart-item .item-info {
+    flex: 1;
+}
+
+.cart-item .item-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.cart-item .item-quantity button {
+    margin: 0 15px;
+}
+
+.like-button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 2.3em;
+    color: #ccc;
+}
+
+.like-button.liked {
+    color: rgb(241, 26, 55);
+}
+#total-price{
+    font-weight: 600;
+    font-family: monospace;
+    font-size: 70px;
+}
+#item-list{
+    font-size: 30px;
+    font-weight: 300;
+}
